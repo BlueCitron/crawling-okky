@@ -13,7 +13,7 @@ const TIMER_PERIOD = environment === 'production' ? 1000 * 60 * 15 : 2000;
  */
 (async () => {
     // init sequelize
-    console.log(`Environment: ${environment}`);
+    startLogging();
     await sequelize.sync({ force: false });
 
     setTimeout(async () => {
@@ -29,6 +29,11 @@ const TIMER_PERIOD = environment === 'production' ? 1000 * 60 * 15 : 2000;
 
 
 })();
+
+function startLogging() {
+    console.log(`Environment: ${environment}`);
+    console.log(`TIME_PERIOD: ${TIMER_PERIOD}`);
+}
 
 async function fetchPostList(url) {
     const { data }  = await axios.get(url);
