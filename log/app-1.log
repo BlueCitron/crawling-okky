@@ -1,0 +1,30 @@
+2019-12-18T00:01:54: Environment: production
+2019-12-18T00:01:54: (node:43588) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T00:01:54: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-12-18T00:01:54: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+2019-12-18T00:01:54: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-12-18T00:01:54: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+2019-12-18T00:02:05: Environment: production
+2019-12-18T00:02:05: (node:67292) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T00:02:05: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-12-18T00:02:05: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+2019-12-18T00:02:05: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-12-18T00:02:05: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+2019-12-18T00:02:14: Environment: production
+2019-12-18T00:02:14: (node:67636) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T00:02:15: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-12-18T00:02:15: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+2019-12-18T00:02:15: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-12-18T00:02:15: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+2019-12-18T00:02:41: Environment: production
+2019-12-18T00:02:41: (node:66696) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T00:02:41: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-12-18T00:02:41: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+2019-12-18T00:02:41: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-12-18T00:02:41: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+2019-12-18T00:02:46: Environment: production
+2019-12-18T00:02:46: (node:4236) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T00:02:46: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-12-18T00:02:46: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+2019-12-18T00:02:46: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-12-18T00:02:46: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`

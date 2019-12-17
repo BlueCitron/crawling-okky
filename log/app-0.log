@@ -1,0 +1,18 @@
+Environment: production
+(node:42916) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+Environment: production
+(node:46740) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+Environment: production
+(node:1684) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
