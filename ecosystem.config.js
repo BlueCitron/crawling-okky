@@ -13,7 +13,7 @@ module.exports = {
     error_file: path.resolve(__dirname, 'log/error.log'),
     time: true,
     env: {
-      NODE_ENV: 'production'
+      NODE_ENV: 'development'
     }
   }],
 };

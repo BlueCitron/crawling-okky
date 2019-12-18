@@ -1,0 +1,2 @@
+2019-12-18T22:18:41: (node:28608) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T22:21:37: (node:25508) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.

@@ -1,12 +1,13 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const sanitize = require('sanitize-html');
+const cron = require('node-cron');
 const { sequelize, Post, Comment } = require('./models');
 
 const BASE_URL = 'https://okky.kr';
 const START_PAGE = `${BASE_URL}/articles/community`;
-const environment = process.env.NODE_ENV;
-const TIMER_PERIOD = environment === 'production' ? 1000 * 60 * 15 : 2000;
+const environment = process.env.NODE_ENV || 'development';
+const TIMER_PERIOD = environment === 'production' ? '*/15 * * * *' : '*/10 * * * * *'; // 15분마다 : 10초마다
 
 /**
  * Main Context
@@ -15,20 +16,16 @@ const TIMER_PERIOD = environment === 'production' ? 1000 * 60 * 15 : 2000;
     // init sequelize
     startLogging();
     await sequelize.sync({ force: false });
-
-    setTimeout(async () => {
-        const data = await fetchPostList(START_PAGE);
-        const postURL = makeTargetPostURL(data);
-       const jobPromises = postURL.map(url => postJob(url));
-        Promise.all(jobPromises)
-            .then(result => {
-
-            });
-
-    }, TIMER_PERIOD);
-
-
+    cron.schedule(TIMER_PERIOD, scheduledJob);
 })();
+
+async function scheduledJob() {
+    const data = await fetchPostList(START_PAGE);
+    const postURL = makeTargetPostURL(data);
+    const jobPromises = postURL.map(url => postJob(url));
+    Promise.all(jobPromises)
+        .then(result => { });
+}
 
 function startLogging() {
     console.log(`Environment: ${environment}`);

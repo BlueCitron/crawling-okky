@@ -28,3 +28,179 @@
 2019-12-18T00:02:46: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
 2019-12-18T00:02:46: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
 2019-12-18T00:02:46: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+2019-12-18T22:18:41: Environment: development
+2019-12-18T22:18:41: TIME_PERIOD: 10000
+2019-12-18T22:18:41: (node:28608) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T22:18:41: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:18:41: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:18:41: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-12-18T22:18:41: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+2019-12-18T22:18:41: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-12-18T22:18:41: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+2019-12-18T22:18:52: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:18:52: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:18:52: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:18:52: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:18:52: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  RPA 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  2달차 신입 재취업이 옳은 선택일까요? 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  국산 유출 ㅎㄷㄷ 
+2019-12-18T22:18:53: CREATE POST:  국비지원교육 면접 후기 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  동기찡 오늘 긔엽더라긔 ㅇㅅㅇ 
+2019-12-18T22:18:53: CREATE POST:  2년전에 약속했던 대학원을 왔으나 너무 실망감이 크네요.. 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  배터리 테스트 장비 SW 개발 
+2019-12-18T22:18:53: CREATE POST:  요새 일본은 은행잎이 무수히 떨어지는데 보기 장관이긔 ㅇㅅㅇ 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  규모있는 중소기업이 목표인데 어떤걸 준비해야할까요? 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  이번 회사 오고 느낀게 다들 핸폰을 사랑해요 ㅇㅅㅇ 
+2019-12-18T22:18:53: CREATE POST:  실무에 계시는 오래된 경력자분들께선 지향하시는 언어가 어떤게 있을까요? 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  이세돌 이야기.. 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  근무시간에 개발은 절반정도 하는거 같네요. 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  앞으로의 진로때문에 너무나 많은 걱정이듭니다ㅠㅠ 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  학점만 좋은 취준생입니다. 
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:53: CREATE POST:  1인 앱 개발 작년 1억 수익 그 후 1년...... 
+2019-12-18T22:18:55: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:55: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:55: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:55: CREATE POST:  웹 관련 신입(주니어) 개발자의 역량이 이 정도는 되야 하나요? 
+2019-12-18T22:18:55: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:18:55: CREATE POST:  건대(자양동) E-Commerce 팀 프로젝트 인원 모집. 
+2019-12-18T22:18:55: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:55: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:18:55: CREATE POST:  개발문서&qa&수정사항 대처법 문의 
+2019-12-18T22:18:55: CREATE POST:  신입 퍼블리셔 포트폴리오 질문입니다. 
+2019-12-18T22:21:37: Environment: development
+2019-12-18T22:21:37: TIME_PERIOD: 10000
+2019-12-18T22:21:37: (node:25508) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+2019-12-18T22:21:37: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:21:37: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:21:37: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER , `title` VARCHAR(255), `writer` VARCHAR(255), `content` TEXT, `url` VARCHAR(255), `created_at` DATETIME, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-12-18T22:21:37: Executing (default): SHOW INDEX FROM `posts` FROM `crawlingapp`
+2019-12-18T22:21:37: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER , `content` TEXT, `writer` VARCHAR(255), `created_at` DATETIME, `post_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-12-18T22:21:37: Executing (default): SHOW INDEX FROM `comments` FROM `crawlingapp`
+2019-12-18T22:21:48: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:21:48: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:21:48: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:21:48: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:21:48: warning: please use IANA standard timezone format ('Etc/GMT0')
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  2달차 신입 재취업이 옳은 선택일까요? 
+2019-12-18T22:21:49: CREATE POST:  국산 유출 ㅎㄷㄷ 
+2019-12-18T22:21:49: CREATE POST:  글을 올렸는데 댓글 ㅎㄷㄷ 하네요. 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  건대(자양동) E-Commerce 팀 프로젝트 인원 모집. 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  RPA 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  웹 관련 신입(주니어) 개발자의 역량이 이 정도는 되야 하나요? 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  국비지원교육 면접 후기 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `posts` (`id`,`title`,`writer`,`content`,`created_at`) VALUES (?,?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  요새 일본은 은행잎이 무수히 떨어지는데 보기 장관이긔 ㅇㅅㅇ 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  이번 회사 오고 느낀게 다들 핸폰을 사랑해요 ㅇㅅㅇ 
+2019-12-18T22:21:49: CREATE POST:  규모있는 중소기업이 목표인데 어떤걸 준비해야할까요? 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  신입 퍼블리셔 포트폴리오 질문입니다. 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  실무에 계시는 오래된 경력자분들께선 지향하시는 언어가 어떤게 있을까요? 
+2019-12-18T22:21:49: CREATE POST:  배터리 테스트 장비 SW 개발 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  2년전에 약속했던 대학원을 왔으나 너무 실망감이 크네요.. 
+2019-12-18T22:21:49: CREATE POST:  동기찡 오늘 긔엽더라긔 ㅇㅅㅇ 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  개발문서&qa&수정사항 대처법 문의 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  근무시간에 개발은 절반정도 하는거 같네요. 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  앞으로의 진로때문에 너무나 많은 걱정이듭니다ㅠㅠ 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  학점만 좋은 취준생입니다. 
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: Executing (default): INSERT INTO `comments` (`id`,`content`,`writer`,`created_at`) VALUES (?,?,?,?);
+2019-12-18T22:21:49: CREATE POST:  1인 앱 개발 작년 1억 수익 그 후 1년...... 

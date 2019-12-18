@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     underscored: true,
     createdAt: false,
     updatedAt: false,
+    tableName: 'comment_okky',
   });
   Comment.associate = function(models) {
     // associations can be defined here

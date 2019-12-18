@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     underscored: true,
     createdAt: false,
     updatedAt: false,
+    tableName: 'post_okky',
   });
   Post.associate = function(models) {
     // associations can be defined here
