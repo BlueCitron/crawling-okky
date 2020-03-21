@@ -4,15 +4,13 @@
     "password": "crawlingapp",
     "database": "crawlingapp",
     "host": "127.0.0.1",
-    "dialect": "mariadb",
-    "operatorsAliases": false
+    "dialect": "mariadb"
   },
   "production": {
     "username": "crawlingapp",
     "password": "crawlingapp",
     "database": "crawlingapp",
     "host": "125.178.219.22",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "dialect": "mysql"
   }
 }

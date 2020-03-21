@@ -28,8 +28,7 @@ async function scheduledJob() {
 }
 
 function startLogging() {
-    console.log(`Environment: ${environment}`);
-    console.log(`TIME_PERIOD: ${TIMER_PERIOD}`);
+    console.log(`Crawling Job Start (env=${environment}, time-period=${TIMER_PERIOD})`);
 }
 
 async function fetchPostList(url) {
@@ -85,8 +84,8 @@ async function saveToDB(postInfo) {
         for (const comment of comments) {
             await Comment.create({ ...comment, post_id: id });
         }
-        console.log(`CREATE POST: ${title}`);
+        console.log(`CREATE POST: (id=${id}, title=${title}, createdAt=${created_at})`);
     } catch (e) {
-        // console.log(e);
+        // console.log(`Fail to persist on Database.`);
     }
 }
